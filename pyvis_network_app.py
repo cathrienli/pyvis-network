@@ -53,13 +53,13 @@ else:
 
     # Save and read graph as HTML file (on Streamlit Sharing)
     try:
-        path = '/tmp'
+        path = 'tmp'
         drug_net.save_graph(f'{path}/pyvis_graph.html')
         HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
 
     # Save and read graph as HTML file (locally)
     except:
-        path = '/html_files'
+        path = 'html_files'
         drug_net.save_graph(f'{path}/pyvis_graph.html')
         HtmlFile = open(f'{path}/pyvis_graph.html', 'r', encoding='utf-8')
 
